@@ -254,6 +254,7 @@ call s:hi('rubyLambdaOperator', s:pink, '', '')
 call s:hi('rubySplatOperator', s:pink, '', '')
 call s:hi('rubyDoubleSplatOperator', s:pink, '', '')
 call s:hi('rubyInterpolationDelimiter', s:yellowc, '', '')
+call s:hi('rubyBlkParamsDelimiter', s:lowgray, '', '') " after/syntax/ruby.vim
 
 call s:hi('rubyConstant', s:blue, '', '')
 call s:hi('rubyClassName', s:green, '', '')
@@ -261,9 +262,15 @@ call s:hi('rubyModuleName',s:green, '', '')
 call s:hi('rubyCapitalizedMethod', s:blue, '', '')
 call s:hi('rubySymbol', s:purple, '', '')
 
+call s:hi('rubyVariableOp', s:lightgray, '', '') " after/syntax/ruby.vim
+call s:hi('rubyInstanceVariable', s:purple, '', '') " after/syntax/ruby.vim
+call s:hi('rubyClassVariable', s:purple, '', '') " after/syntax/ruby.vim
+call s:hi('rubyGlobalVariable', s:fg, '', '') " after/syntax/ruby.vim
 call s:hi('rubyPredefinedVariable', s:fg, '', '')
 call s:hi('rubyPredefinedConstant', s:purple, '', '')
 call s:hi('rubyPseudoVariable', s:orange, '', s:attr.i)
+call s:hi('rubyPseudoVariable__', s:lightgray, '', s:attr.i) " after/syntax/ruby.vim
+call s:hi('rubyNil', s:purple, '', '') " after/syntax/ruby.vim
 " }}}
 
 " GO ---------------------------------------------------------------------- {{{
